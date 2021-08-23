@@ -23,13 +23,7 @@ function compute()
 	var years  = document.getElementById("years").value;
 	var rate = document.getElementById("rate").value;
 	
-	if (principal == ""){
-		alert("Please enter the principal amount");
-		document.getElementById("principal").focus();
-		return false;
-	}
-	
-	if(principal<=0){
+	if(principal<=0 || principal == ""){
 		alert("Please enter a positive number");
 		document.getElementById("principal").focus();
 		return false;
