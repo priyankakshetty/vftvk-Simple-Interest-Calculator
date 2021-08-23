@@ -8,7 +8,7 @@ slider.onchange = function() {
 
 //Dynam,ically creating dropdown opttion for number of years 
 var sel = document.getElementById("years");
-for (var i = 1; i <= 100; i++)
+for (var i = 1; i <= 10; i++)
     {
         var option = document.createElement("option");
         option.value = i;
