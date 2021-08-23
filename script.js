@@ -39,8 +39,8 @@ function compute()
 	var result =  principal * years * rate /100;
 	var d = new Date();
 	var ny = d.getFullYear() + parseInt(years);
-
-	var txt = "If you deposit " + principal + ",<br> at an interest rate of " + rate + "%.<br> You will recieve an amount of "+ result +",<br> in the year "+ny +"<br>";
+	
+	var txt = "If you deposit <mark>" + principal + "</mark>,<br> at an interest rate of <mark>" + rate + "%</mark>.<br> You will recieve an amount of <mark>"+ result +"</mark>,<br> in the year <mark>"+ny +"</mark><br>";
 	document.getElementById("t1").innerHTML = txt;
 }
         
